@@ -68,6 +68,9 @@ class Game {
         cars[index-1].position.y = y;
 
         if (index === player.index){
+          stroke(10)
+          fill('red')
+          ellipse(x,y,60,60)
           camera.position.x = displayWidth/2;
           camera.position.y = cars[index-1].position.y
         }
